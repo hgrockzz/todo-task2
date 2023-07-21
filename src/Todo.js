@@ -5,15 +5,7 @@ const Todo = () => {
     const [items, setItems] = useState([
         {
             id: 1,
-            Task: 'Task 1',
-        },
-        {
-            id: 1,
-            Task: 'Task 2',
-        },
-        {
-            id: 1,
-            Task: 'Task 3',
+            Task: 'these are tasks',
         }
     ]);
     const [Task, setTask] = useState('');
@@ -63,7 +55,7 @@ const Todo = () => {
             <div className='todo-bg'>
                
                 <div className='task-header'>
-                    <h1>ToDo List</h1>
+                    <h1>Your To-Do's</h1>
                     <div>
                         <input
                             type="text"
@@ -73,7 +65,7 @@ const Todo = () => {
                             required
                         />
                         <button onClick={editMode ? handleEditItem : handleAddItem} className='add-task-btn'>
-                            {editMode ? 'Save Changes' : 'Add Item'}
+                            {editMode ? 'Save Changes' : 'Add Task'}
                         </button>
                     </div>
                 </div>
